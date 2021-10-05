@@ -56,15 +56,37 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
-          <div class="text-container">
+          <header class="text-container">
             <label class="label-for-tweet" for="tweet-text">What are you humming about?</label>
             <textarea name="text" id="tweet-text"></textarea>
-          </div>
-          <div class="tweet-container">
+          </header>
+          <footer class="tweet-container">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
+          </footer>
         </form>
+      </section>
+      <!-- tweet-data -->
+      <section class="tweet-data">
+        <article class="tweet-data-article">
+          
+          <header>
+            <p>Newton</p>
+            <p>@SirIsaac</p>
+          </header>
+          <p>This is the tweet content!</p>
+          <hr>
+          <footer>
+            <output name="data" class="data" for="tweet-text">10<span> days ago</span></output>
+            <div class="icons">
+              <i class="fas fa-flag"></i>
+              <i class="fas fa-retweet"></i>
+              <i class="fas fa-heart"></i>
+            </div>
+
+          </footer>
+
+        </article>
       </section>
     </main>
     <script src="./scripts/composer-char-counter.js"></script>
