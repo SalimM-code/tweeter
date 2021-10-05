@@ -43,3 +43,7 @@ textarea {
   background-color: transparent;
   margin-bottom: 1em;
 }
+
+.red {
+  color: red;
+}
