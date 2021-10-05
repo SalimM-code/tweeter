@@ -12,7 +12,7 @@ form {
 .tweet-container {
   display: flex;
   justify-content: space-between;
-  margin: 1em 0;
+  margin-bottom: 2em ;
 }
 
 .tweet-container button {
@@ -28,13 +28,13 @@ form {
 .text-container {
   display: flex;
   flex-direction: column;
-  border-bottom: 3px solid black;
+
 }
 
 .label-for-tweet {
-  margin-bottom: 0.5em;
   font-family: 'Source Sans Pro';
   font-weight: bold;
+  margin-bottom: 0.5em;
 }
 textarea {
   /* border: none; */
@@ -42,8 +42,57 @@ textarea {
   outline: none;
   background-color: transparent;
   margin-bottom: 1em;
+  resize: none;
+  border: none;
+  border-bottom: 4px solid black;
 }
 
 .red {
   color: red;
+}
+
+/* tweet-data */
+
+.tweet-data {
+  border: 4px solid black;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+
+
+.tweet-data-article header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweet-data-article header p {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+/* tweet-data footer */
+.tweet-data:hover {
+  box-shadow: 7px 10px 0px 1px rgba(184,184,184,1)
+}
+
+.icons .fas {
+  color: rgb(44, 44, 116);
+  font-size: 0.6em;
+  letter-spacing: 0.4em;
+}
+.icons .fas:hover {
+  color: goldenrod;
+}
+
+.tweet-data footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1em;
+}
+
+.tweet-data footer output {
+  font-size: 0.6em;
+  font-weight: bold;
 }
