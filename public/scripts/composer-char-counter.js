@@ -1,4 +1,4 @@
-$(function() {
+$(document).ready(function() {
 // incrementing the char counter
   let maxLength = 140;
   $('#tweet-text').keyup(function() {
