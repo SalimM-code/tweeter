@@ -13,4 +13,7 @@ $(document).ready(function() {
     $('.counter').text(length);
   });
 
+  $('#scrollUp').click(() => {
+    $("html, body").animate({ scrollTop: "0px" }, 'smooth');
+  })
 })
