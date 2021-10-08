@@ -15,3 +15,19 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Features
+- Click on "what are you humming about?" to compose a new tweet.
+- Protection against cross-site scripting (XSS)
+- The functionality is fluid, you get to see your new tweet right away without having to refresh.
+- The single page app feature a scroll to the top button.
+- The app also feature form validation
+  - If user inputs an empty tweet or the tweet exceeds the character limit of 140 an appropriate error message is displayed.
+
+## Screenshots
+!["Desktop view"](/images/desktop.png)
+!["Tweets view"](/images/tweet-section.png)
+!["screenshot description"](/images/mobile-view.png)
+
+
+
