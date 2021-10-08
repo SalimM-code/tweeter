@@ -60,7 +60,6 @@ $(document).ready(function() {
       method: "GET",
       dataType: "json",
       success: (tweets) => {
-        console.log("data:", tweets);
         renderTweets(tweets);
       },
       error: (err) => {
@@ -124,11 +123,9 @@ $(document).ready(function() {
 
   };
 
-
-
-  
 });
 
+// scroll to top logic
 $(window).on("scroll", function() {
   let scrollPos = $(window).scrollTop();
   if (scrollPos <= 0) {
