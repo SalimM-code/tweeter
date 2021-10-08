@@ -46,6 +46,7 @@ $(document).ready(function() {
 
     $.post("/tweets/", serialization, (response) => {
       $('#tweet-text').val('') // clears tweet textarea by moving cursor back
+      $('.counter').text(140)
       const $tweetPage = $(('.tweet-data'));
       $tweetPage.empty();
       loadtweets();
@@ -72,7 +73,7 @@ $(document).ready(function() {
 
   const createTweetElement = (dataObj) => {
 
-    const $img = $('<img>').attr('src', dataObj.user.avatars);
+    const $img = $('<img>').attr('src', dataObj.user.avatars).addClass('images');
 
     const $parAvatarName = $('<p>')
       .addClass('userName')
@@ -123,6 +124,17 @@ $(document).ready(function() {
 
   };
 
+
+
   
+});
+
+$(window).on("scroll", function() {
+  let scrollPos = $(window).scrollTop();
+  if (scrollPos <= 0) {
+      $("#scrollUp").fadeOut();
+  } else {
+      $("#scrollUp").fadeIn();
+  }
 });
 
