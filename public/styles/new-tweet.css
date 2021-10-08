@@ -37,7 +37,7 @@ form {
   margin-bottom: 0.5em;
 }
 textarea {
-  /* border: none; */
+
   overflow: auto;
   outline: none;
   background-color: transparent;
